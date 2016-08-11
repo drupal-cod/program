@@ -1,0 +1,9 @@
+name: 'COD Program'
+description: 'Program and event functionality.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - node
+version: 8.x-1.0
+package: 'COD'
