@@ -8,5 +8,4 @@ dependencies:
   - fivestar
   - field_group
   - votingapi
-version: 8.x-1.0
 package: 'COD'
