@@ -33,7 +33,7 @@
     "lakion/mink-debug-extension":        "^1.0.3",
     "phpunit/phpunit":                    "~4.8",
     "squizlabs/php_codesniffer":          "~2",
-    "se/selenium-server-standalone": "^2.53"
+    "se/selenium-server-standalone":      "^2.53"
 
   },
   "scripts": {
