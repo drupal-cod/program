@@ -5,14 +5,12 @@ dependencies:
     - field.field.node.session.body
     - field.field.node.session.field_experience_level
     - field.field.node.session.field_files
-    - field.field.node.session.field_fivestar
     - field.field.node.session.field_image
     - field.field.node.session.field_status
     - node.type.session
   module:
     - field_group
     - file
-    - fivestar
     - image
     - options
     - panelizer
@@ -70,13 +68,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: file_default
-  field_fivestar:
-    weight: 23
-    label: above
-    settings:
-      fivestar_widget: modules/fivestar/widgets/basic/basic.css
-    third_party_settings: {  }
-    type: fivestar_stars
   field_image:
     weight: 22
     label: above

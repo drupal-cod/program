@@ -6,14 +6,12 @@ dependencies:
     - field.field.node.session.body
     - field.field.node.session.field_experience_level
     - field.field.node.session.field_files
-    - field.field.node.session.field_fivestar
     - field.field.node.session.field_image
     - field.field.node.session.field_status
     - node.type.session
   module:
     - entity_browser
     - file
-    - fivestar
     - path
     - text
     - workbench_moderation
@@ -46,12 +44,6 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-  field_fivestar:
-    weight: 36
-    settings:
-      fivestar_widget: modules/fivestar/widgets/basic/basic.css
-    third_party_settings: {  }
-    type: fivestar_stars
   field_image:
     type: entity_browser_file
     weight: 35
