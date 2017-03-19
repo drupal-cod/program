@@ -1,0 +1,9 @@
+name: 'COD Session'
+description: 'Session functionality.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - node
+  - field_group
+package: 'COD'
