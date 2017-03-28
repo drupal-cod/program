@@ -1,3 +1,4 @@
+uuid: 7425ed19-68f2-4f43-8ec1-fb27e58ac666
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.session
   module:
     - file
+_core:
+  default_config_hash: v6D5dchUHK-wko8_Wmmi_5axI4hfzqqw3braQMS1GOE
 id: node.session.field_files
 field_name: field_files
 entity_type: node
