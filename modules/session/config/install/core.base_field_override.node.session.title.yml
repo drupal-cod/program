@@ -1,8 +1,11 @@
+uuid: 23f46ecd-2970-4d68-99b0-4917a38b449e
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.session
+_core:
+  default_config_hash: F8gO65KkUKXIt1sPBaq4AATHpC53C3GJN_QmvFAicE0
 id: node.session.title
 field_name: title
 entity_type: node
