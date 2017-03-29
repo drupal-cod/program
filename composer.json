@@ -23,7 +23,8 @@
     }
   },
   "require":{
-    "drupal/field_group": "1.0-rc6"
+    "drupal/field_group": "1.0-rc6",
+    "drupal/entity_browser": "1.0-rc2"
   },
   "require-dev": {
     "drupal-composer/drupal-scaffold":    "^2.0.0",
