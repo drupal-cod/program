@@ -8,15 +8,17 @@
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Implements hook_form_FORM_ID_alter().
+ * Implements hook_form_alter().
  */
-function session_form_node_session_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  $user = \Drupal::currentUser()->getRoles();
-  $is_administrator = in_array("administrator", $user);
+function session_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_session_edit_form' || $form_id == 'node_session_form') {
+    $user = \Drupal::currentUser()->getRoles();
+    $is_administrator = in_array("administrator", $user);
 
-  // Hide the session_status for non-admins.
-  // @todo replace with a permission.
-  if (!$is_administrator) {
-    unset($form['field_status']);
+    // Hide the session_status for non-admins.
+    // @todo replace with a permission.
+    if (!$is_administrator) {
+      unset($form['field_status']);
+    }
   }
 }
