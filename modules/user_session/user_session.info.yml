@@ -1,0 +1,9 @@
+name: 'User Session'
+type: module
+description: Allows users to save sessions to their schedule.
+core: 8.x
+package: COD
+dependencies:
+  - flag
+  - program
+  - session
