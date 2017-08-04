@@ -99,7 +99,7 @@ script:
   - phpcs $TRAVIS_BUILD_DIR/docroot/modules/program --standard=$TRAVIS_BUILD_DIR/docroot/modules/contrib/coder/coder_sniffer/Drupal/ruleset.xml --ignore=bin,*.css,libraries,modules/contrib
   - behat --config tests/behat/behat.yml --strict
   - cd $TRAVIS_BUILD_DIR/docroot
-  - drush en simpletest program --yes
+  - drush en simpletest program session --yes
   - php core/scripts/run-tests.sh --module program --php $(which php)
   - cd $TRAVIS_BUILD_DIR/
   - phpunit --configuration tests/phpunit/phpunit.xml --testdox
