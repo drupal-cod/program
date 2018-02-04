@@ -1,0 +1,30 @@
+add program entities:
+  title: 'Create new Program entities'
+
+administer program entities:
+  title: 'Administer Program entities'
+  description: 'Allow to access the administration form to configure Program entities.'
+  restrict access: true
+
+delete program entities:
+  title: 'Delete Program entities'
+
+edit program entities:
+  title: 'Edit Program entities'
+
+view published program entities:
+  title: 'View published Program entities'
+
+view unpublished program entities:
+  title: 'View unpublished Program entities'
+
+view all program revisions:
+  title: 'View all Program revisions'
+
+revert all program revisions:
+  title: 'Revert all Program revisions'
+  description: 'Role requires permission <em>view Program revisions</em> and <em>edit rights</em> for program entities in question or <em>administer program entities</em>.'
+
+delete all program revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Program revisions</em> and <em>delete rights</em> for program entities in question or <em>administer program entities</em>.'

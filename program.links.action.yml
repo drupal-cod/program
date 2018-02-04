@@ -1,0 +1,16 @@
+entity.program_type.add_form:
+  route_name: entity.program_type.add_form
+  title: 'Add Program type'
+  appears_on:
+    - entity.program_type.collection
+
+entity.program.add_form:
+  route_name: entity.program.add_page
+  title: 'Add Program'
+  appears_on:
+    - entity.program.collection
+entity.program_type.add_form:
+  route_name: entity.program_type.add_form
+  title: 'Add Program type'
+  appears_on:
+    - entity.program_type.collection

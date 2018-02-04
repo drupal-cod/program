@@ -1,0 +1,22 @@
+# Program routing definition
+
+entity.program.canonical:
+  route_name: entity.program.canonical
+  base_route: entity.program.canonical
+  title: 'View'
+
+entity.program.edit_form:
+  route_name: entity.program.edit_form
+  base_route: entity.program.canonical
+  title: 'Edit'
+
+entity.program.version_history:
+  route_name: entity.program.version_history
+  base_route: entity.program.canonical
+  title: 'Revisions'
+
+entity.program.delete_form:
+  route_name:  entity.program.delete_form
+  base_route:  entity.program.canonical
+  title: Delete
+  weight: 10

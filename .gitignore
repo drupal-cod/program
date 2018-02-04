@@ -1,9 +1,3 @@
-# Ignore build artifacts
-/deploy
-bin/*
-tmp
-reports
-
 # OS X
 .DS_Store
 .AppleDouble
@@ -76,6 +70,7 @@ vendor/.git
 #Sass
 .sass-cache
 *.css.map
+*.css
 
 #Netbeans IDE
 nbproject
@@ -94,6 +89,4 @@ nbproject/*
 
 # PHPStorm
 atlassian-ide-plugin.xml
-
-# Drupal console
-console
+node_modules
