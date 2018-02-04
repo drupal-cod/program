@@ -1,0 +1,26 @@
+
+# Program type menu items definition
+entity.program_type.collection:
+  title: 'Program type'
+  route_name: entity.program_type.collection
+  description: 'List Program type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+
+
+# Program menu items definition
+entity.program.collection:
+  title: 'Program list'
+  route_name: entity.program.collection
+  description: 'List Program entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Program type menu items definition
+entity.program_type.collection:
+  title: 'Program type'
+  route_name: entity.program_type.collection
+  description: 'List Program type (bundles)'
+  parent: system.admin_structure
+  weight: 99

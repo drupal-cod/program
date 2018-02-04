@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains program.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function program_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the program module.
+    case 'help.page.program':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function program_theme() {
+  $theme = [];
+  $theme['program'] = [
+    'render element' => 'elements',
+    'file' => 'program.page.inc',
+    'template' => 'program',
+  ];
+  $theme['program_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'program.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function program_theme_suggestions_program(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#program'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'program__' . $sanitized_view_mode;
+  $suggestions[] = 'program__' . $entity->bundle();
+  $suggestions[] = 'program__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'program__' . $entity->id();
+  $suggestions[] = 'program__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
