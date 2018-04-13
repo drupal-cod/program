@@ -52,7 +52,7 @@ use Drupal\user\UserInterface;
  *     "uid" = "user_id",
  *     "langcode" = "langcode",
  *     "status" = "status",
- *   },
+ *
  *   links = {
  *     "canonical" = "/program/{program}",
  *     "add-page" = "/program/add",
